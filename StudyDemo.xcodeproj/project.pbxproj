@@ -1141,50 +1141,50 @@
 			children = (
 				35E34249228A8C4E006381A9 /* Accelerate-数学计算、图像计算。这个框架包含了多种用于矢量和矩阵数学、数字信号处理、大数局处理和图像处理的C API */,
 				35E342A7228A8C57006381A9 /* Accounts-提供对存储在帐户数据库中的用户帐户的访问 */,
-				35E3426D228A8C51006381A9 /* AddressBook */,
+				35E3426D228A8C51006381A9 /* AddressBook-通讯录 */,
 				35E3423D228A8C4E006381A9 /* AddressBookUI */,
-				35E3429D228A8C56006381A9 /* AdSupport */,
-				35E34221228A8C4C006381A9 /* ARKit */,
-				35E342AB228A8C57006381A9 /* AssetsLibrary */,
-				35E34281228A8C52006381A9 /* AudioToolbox */,
-				35E34267228A8C50006381A9 /* AudioUnit */,
-				35E34225228A8C4C006381A9 /* AuthenticationServeices */,
-				35E34233228A8C4D006381A9 /* AVFoundation */,
-				35E341F9228A8C4B006381A9 /* AVKit */,
-				35E34257228A8C4F006381A9 /* BusinessChat */,
-				35E34269228A8C50006381A9 /* CallKit */,
-				35E342B9228A8C58006381A9 /* CarPlay */,
-				35E34297228A8C55006381A9 /* CFNetwork */,
-				35E3421D228A8C4C006381A9 /* ClassKit */,
-				35E342A3228A8C57006381A9 /* CloudKit */,
-				35E34299228A8C56006381A9 /* Contacts */,
+				35E3429D228A8C56006381A9 /* AdSupport-获取设备唯一的一个广告标识符 */,
+				35E34221228A8C4C006381A9 /* ARKit-AR技术功能 */,
+				35E342AB228A8C57006381A9 /* AssetsLibrary-获取相册视频以及图片 */,
+				35E34281228A8C52006381A9 /* AudioToolbox-是专门处理声音的一个框架，这个库是C的接口，偏向于底层，用于在线流媒体音乐的播放 */,
+				35E34267228A8C50006381A9 /* AudioUnit-提供高效，模块化音频处理方案 */,
+				35E34225228A8C4C006381A9 /* AuthenticationServices-身份验证服务、密码填充 */,
+				35E34233228A8C4D006381A9 /* AVFoundation-是一个强大的多媒体处理框架，它基于CoreMedia、CoreAudio、CoreVideo、CoreAnimation等框架，所以我们对音视频的处理大多数时候都是用它 */,
+				35E341F9228A8C4B006381A9 /* AVKit-基于AVFoundation框架，提供了一个用于播放视频内容的高级界面，创建用于媒体播放的视图级服务 */,
+				35E34257228A8C4F006381A9 /* BusinessChat-配合iMessage应用将商家与用户紧密的结合起来，为商家提供另外一种非常方便的客服系统 */,
+				35E34269228A8C50006381A9 /* CallKit-能将微信、QQ等网络电话整合成系统级通话，使用起来和手机本身的通话功能完全相同（工信部禁止使用，影响三大运营商利益） */,
+				35E342B9228A8C58006381A9 /* CarPlay-为app加入CarPlay的功能，在车载显示屏上操作 */,
+				35E34297228A8C55006381A9 /* CFNetwork-比较底层的网络框架，C语言编写，可以控制一些更底层的东西，如各种常用网络协议、socket通讯等 */,
+				35E3421D228A8C4C006381A9 /* ClassKit-一个专为教育应用程序设计的框架，可以让开发人员创建教师分配给学生的活动 */,
+				35E342A3228A8C57006381A9 /* CloudKit-云端数据库,存储数据,提供简单的增删改查功能（相当于操作你个人的苹果后台服务器） */,
+				35E34299228A8C56006381A9 /* Contacts-iOS9.0 替代AddressBook.framework的框架 */,
 				35E34253228A8C4F006381A9 /* ContactsUI */,
-				35E342AF228A8C58006381A9 /* CoreAudio */,
-				35E34235228A8C4D006381A9 /* CoreAudioKit */,
-				35E34265228A8C50006381A9 /* CoreBluetooth */,
-				35E342B7228A8C58006381A9 /* CoreData */,
-				35E34277228A8C51006381A9 /* CoreFoundation */,
-				35E342C1228A8C59006381A9 /* CoreGraphics */,
-				35E34287228A8C52006381A9 /* CoreImage */,
-				35E34285228A8C52006381A9 /* CoreLocation */,
-				35E34215228A8C4B006381A9 /* CoreMedia */,
-				35E34209228A8C4B006381A9 /* CoreMIDI */,
-				35E341FF228A8C4B006381A9 /* CoreML */,
-				35E34227228A8C4C006381A9 /* CoreMotion */,
-				35E34271228A8C51006381A9 /* CoreNFC */,
-				35E34203228A8C4B006381A9 /* CoreServices */,
-				35E3424D228A8C4F006381A9 /* CoreSpotlight */,
-				35E3425B228A8C4F006381A9 /* CoreTelephony */,
-				35E34273228A8C51006381A9 /* CoreText */,
-				35E3423F228A8C4E006381A9 /* CoreVideo */,
-				35E34229228A8C4C006381A9 /* DeviceCheck */,
-				35E3420B228A8C4B006381A9 /* EventKit */,
-				35E34231228A8C4D006381A9 /* EventKitUI */,
-				35E3428D228A8C53006381A9 /* ExternalAccessory */,
-				35E3428B228A8C52006381A9 /* FileProvider */,
+				35E342AF228A8C58006381A9 /* CoreAudio-提供对音频文件操作的底层接口 */,
+				35E34235228A8C4D006381A9 /* CoreAudioKit-提供了一个简单的音频界面，并且是跨应用的 */,
+				35E34265228A8C50006381A9 /* CoreBluetooth-蓝牙框架 */,
+				35E342B7228A8C58006381A9 /* CoreData-iOS系统提供的数据存储方式 */,
+				35E34277228A8C51006381A9 /* CoreFoundation-是一组C语言接口，它们为iOS应用程序提供基本数据管理和服务功能 */,
+				35E342C1228A8C59006381A9 /* CoreGraphics-提供2D绘图的框架 */,
+				35E34287228A8C52006381A9 /* CoreImage-iOS中的图像处理框架 */,
+				35E34285228A8C52006381A9 /* CoreLocation-定位服务 */,
+				35E34215228A8C4B006381A9 /* CoreMedia-此框架提供AV Foundation框架使用的底层媒体类型 */,
+				35E34209228A8C4B006381A9 /* CoreMIDI-用于与MIDI设备（如硬件键盘和合成器）进行通信 */,
+				35E341FF228A8C4B006381A9 /* CoreML-机器学习框架 */,
+				35E34227228A8C4C006381A9 /* CoreMotion-传感器（距离传感器、加速计、陀螺仪、摇一摇、计步器） */,
+				35E34271228A8C51006381A9 /* CoreNFC-NFC技术（短距高频的无线电技术） */,
+				35E34203228A8C4B006381A9 /* CoreServices-为所有的应用程序提供基础系统服务 */,
+				35E3424D228A8C4F006381A9 /* CoreSpotlight-用来索引应用内的内容 */,
+				35E3425B228A8C4F006381A9 /* CoreTelephony-获取运营商信息、监听通话状态 */,
+				35E34273228A8C51006381A9 /* CoreText-文本显示的一个底层框架，它是用C语言写成的 */,
+				35E3423F228A8C4E006381A9 /* CoreVideo-提供对视频文件操作的底层接口 */,
+				35E34229228A8C4C006381A9 /* DeviceCheck-允许你通过你的服务器与 Apple 服务器通讯，并为单个设备设置两个 bit 的数据 */,
+				35E3420B228A8C4B006381A9 /* EventKit-日历事件操作（提醒） */,
+				35E34231228A8C4D006381A9 /* EventKitUI-显示用于查看、选择和编辑日历事件和提醒的界面 */,
+				35E3428D228A8C53006381A9 /* ExternalAccessory-支持通过Apple Lightning或30针连接器或使用蓝牙无线连接与连接到基于iOS的设备的外部硬件进行通信 */,
+				35E3428B228A8C52006381A9 /* FileProvider-实施File Provider扩展，以便其他应用程序可以访问您的包含应用程序存储和管理的文档和目录 */,
 				35E341FB228A8C4B006381A9 /* FileProviderUI */,
-				35E34259228A8C4F006381A9 /* Foundation */,
-				35E3428F228A8C53006381A9 /* GameController */,
+				35E34259228A8C4F006381A9 /* Foundation-NS系列基础类 */,
+				35E3428F228A8C53006381A9 /* GameController-游戏手柄控制 */,
 				35E3422B228A8C4C006381A9 /* GameKit */,
 				35E342B1228A8C58006381A9 /* GameplayKit */,
 				35E34237228A8C4D006381A9 /* GLKit */,
@@ -1437,12 +1437,12 @@
 			path = WebKit;
 			sourceTree = "<group>";
 		};
-		35E341F9228A8C4B006381A9 /* AVKit */ = {
+		35E341F9228A8C4B006381A9 /* AVKit-基于AVFoundation框架，提供了一个用于播放视频内容的高级界面，创建用于媒体播放的视图级服务 */ = {
 			isa = PBXGroup;
 			children = (
 				35E341FA228A8C4B006381A9 /* AVKit.framework */,
 			);
-			path = AVKit;
+			path = "AVKit-基于AVFoundation框架，提供了一个用于播放视频内容的高级界面，创建用于媒体播放的视图级服务";
 			sourceTree = "<group>";
 		};
 		35E341FB228A8C4B006381A9 /* FileProviderUI */ = {
@@ -1461,12 +1461,12 @@
 			path = IOKit;
 			sourceTree = "<group>";
 		};
-		35E341FF228A8C4B006381A9 /* CoreML */ = {
+		35E341FF228A8C4B006381A9 /* CoreML-机器学习框架 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34200228A8C4B006381A9 /* CoreML.framework */,
 			);
-			path = CoreML;
+			path = "CoreML-机器学习框架";
 			sourceTree = "<group>";
 		};
 		35E34201228A8C4B006381A9 /* QuartzCore */ = {
@@ -1477,12 +1477,12 @@
 			path = QuartzCore;
 			sourceTree = "<group>";
 		};
-		35E34203228A8C4B006381A9 /* CoreServices */ = {
+		35E34203228A8C4B006381A9 /* CoreServices-为所有的应用程序提供基础系统服务 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34204228A8C4B006381A9 /* CoreServices.framework */,
 			);
-			path = CoreServices;
+			path = "CoreServices-为所有的应用程序提供基础系统服务";
 			sourceTree = "<group>";
 		};
 		35E34205228A8C4B006381A9 /* ReplayKit */ = {
@@ -1501,20 +1501,20 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		35E34209228A8C4B006381A9 /* CoreMIDI */ = {
+		35E34209228A8C4B006381A9 /* CoreMIDI-用于与MIDI设备（如硬件键盘和合成器）进行通信 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3420A228A8C4B006381A9 /* CoreMIDI.framework */,
 			);
-			path = CoreMIDI;
+			path = "CoreMIDI-用于与MIDI设备（如硬件键盘和合成器）进行通信";
 			sourceTree = "<group>";
 		};
-		35E3420B228A8C4B006381A9 /* EventKit */ = {
+		35E3420B228A8C4B006381A9 /* EventKit-日历事件操作（提醒） */ = {
 			isa = PBXGroup;
 			children = (
 				35E3420C228A8C4B006381A9 /* EventKit.framework */,
 			);
-			path = EventKit;
+			path = "EventKit-日历事件操作（提醒）";
 			sourceTree = "<group>";
 		};
 		35E3420D228A8C4B006381A9 /* iAd */ = {
@@ -1549,12 +1549,12 @@
 			path = NaturalLanguage;
 			sourceTree = "<group>";
 		};
-		35E34215228A8C4B006381A9 /* CoreMedia */ = {
+		35E34215228A8C4B006381A9 /* CoreMedia-此框架提供AV Foundation框架使用的底层媒体类型 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34216228A8C4B006381A9 /* CoreMedia.framework */,
 			);
-			path = CoreMedia;
+			path = "CoreMedia-此框架提供AV Foundation框架使用的底层媒体类型";
 			sourceTree = "<group>";
 		};
 		35E34217228A8C4C006381A9 /* SafariServices */ = {
@@ -1581,12 +1581,12 @@
 			path = Security;
 			sourceTree = "<group>";
 		};
-		35E3421D228A8C4C006381A9 /* ClassKit */ = {
+		35E3421D228A8C4C006381A9 /* ClassKit-一个专为教育应用程序设计的框架，可以让开发人员创建教师分配给学生的活动 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3421E228A8C4C006381A9 /* ClassKit.framework */,
 			);
-			path = ClassKit;
+			path = "ClassKit-一个专为教育应用程序设计的框架，可以让开发人员创建教师分配给学生的活动";
 			sourceTree = "<group>";
 		};
 		35E3421F228A8C4C006381A9 /* IntentsUI */ = {
@@ -1597,12 +1597,12 @@
 			path = IntentsUI;
 			sourceTree = "<group>";
 		};
-		35E34221228A8C4C006381A9 /* ARKit */ = {
+		35E34221228A8C4C006381A9 /* ARKit-AR技术功能 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34222228A8C4C006381A9 /* ARKit.framework */,
 			);
-			path = ARKit;
+			path = "ARKit-AR技术功能";
 			sourceTree = "<group>";
 		};
 		35E34223228A8C4C006381A9 /* Social */ = {
@@ -1613,28 +1613,28 @@
 			path = Social;
 			sourceTree = "<group>";
 		};
-		35E34225228A8C4C006381A9 /* AuthenticationServeices */ = {
+		35E34225228A8C4C006381A9 /* AuthenticationServices-身份验证服务、密码填充 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34226228A8C4C006381A9 /* AuthenticationServices.framework */,
 			);
-			path = AuthenticationServeices;
+			path = "AuthenticationServices-身份验证服务、密码填充";
 			sourceTree = "<group>";
 		};
-		35E34227228A8C4C006381A9 /* CoreMotion */ = {
+		35E34227228A8C4C006381A9 /* CoreMotion-传感器（距离传感器、加速计、陀螺仪、摇一摇、计步器） */ = {
 			isa = PBXGroup;
 			children = (
 				35E34228228A8C4C006381A9 /* CoreMotion.framework */,
 			);
-			path = CoreMotion;
+			path = "CoreMotion-传感器（距离传感器、加速计、陀螺仪、摇一摇、计步器）";
 			sourceTree = "<group>";
 		};
-		35E34229228A8C4C006381A9 /* DeviceCheck */ = {
+		35E34229228A8C4C006381A9 /* DeviceCheck-允许你通过你的服务器与 Apple 服务器通讯，并为单个设备设置两个 bit 的数据 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3422A228A8C4C006381A9 /* DeviceCheck.framework */,
 			);
-			path = DeviceCheck;
+			path = "DeviceCheck-允许你通过你的服务器与 Apple 服务器通讯，并为单个设备设置两个 bit 的数据";
 			sourceTree = "<group>";
 		};
 		35E3422B228A8C4C006381A9 /* GameKit */ = {
@@ -1661,28 +1661,28 @@
 			path = MessageUI;
 			sourceTree = "<group>";
 		};
-		35E34231228A8C4D006381A9 /* EventKitUI */ = {
+		35E34231228A8C4D006381A9 /* EventKitUI-显示用于查看、选择和编辑日历事件和提醒的界面 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34232228A8C4D006381A9 /* EventKitUI.framework */,
 			);
-			path = EventKitUI;
+			path = "EventKitUI-显示用于查看、选择和编辑日历事件和提醒的界面";
 			sourceTree = "<group>";
 		};
-		35E34233228A8C4D006381A9 /* AVFoundation */ = {
+		35E34233228A8C4D006381A9 /* AVFoundation-是一个强大的多媒体处理框架，它基于CoreMedia、CoreAudio、CoreVideo、CoreAnimation等框架，所以我们对音视频的处理大多数时候都是用它 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34234228A8C4D006381A9 /* AVFoundation.framework */,
 			);
-			path = AVFoundation;
+			path = "AVFoundation-是一个强大的多媒体处理框架，它基于CoreMedia、CoreAudio、CoreVideo、CoreAnimation等框架，所以我们对音视频的处理大多数时候都是用它";
 			sourceTree = "<group>";
 		};
-		35E34235228A8C4D006381A9 /* CoreAudioKit */ = {
+		35E34235228A8C4D006381A9 /* CoreAudioKit-提供了一个简单的音频界面，并且是跨应用的 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34236228A8C4D006381A9 /* CoreAudioKit.framework */,
 			);
-			path = CoreAudioKit;
+			path = "CoreAudioKit-提供了一个简单的音频界面，并且是跨应用的";
 			sourceTree = "<group>";
 		};
 		35E34237228A8C4D006381A9 /* GLKit */ = {
@@ -1717,12 +1717,12 @@
 			path = AddressBookUI;
 			sourceTree = "<group>";
 		};
-		35E3423F228A8C4E006381A9 /* CoreVideo */ = {
+		35E3423F228A8C4E006381A9 /* CoreVideo-提供对视频文件操作的底层接口 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34240228A8C4E006381A9 /* CoreVideo.framework */,
 			);
-			path = CoreVideo;
+			path = "CoreVideo-提供对视频文件操作的底层接口";
 			sourceTree = "<group>";
 		};
 		35E34241228A8C4E006381A9 /* IdentityLookup */ = {
@@ -1774,12 +1774,12 @@
 			path = MultipeerConnectivity;
 			sourceTree = "<group>";
 		};
-		35E3424D228A8C4F006381A9 /* CoreSpotlight */ = {
+		35E3424D228A8C4F006381A9 /* CoreSpotlight-用来索引应用内的内容 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3424E228A8C4F006381A9 /* CoreSpotlight.framework */,
 			);
-			path = CoreSpotlight;
+			path = "CoreSpotlight-用来索引应用内的内容";
 			sourceTree = "<group>";
 		};
 		35E3424F228A8C4F006381A9 /* PassKit */ = {
@@ -1814,28 +1814,28 @@
 			path = LocalAuthentication;
 			sourceTree = "<group>";
 		};
-		35E34257228A8C4F006381A9 /* BusinessChat */ = {
+		35E34257228A8C4F006381A9 /* BusinessChat-配合iMessage应用将商家与用户紧密的结合起来，为商家提供另外一种非常方便的客服系统 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34258228A8C4F006381A9 /* BusinessChat.framework */,
 			);
-			path = BusinessChat;
+			path = "BusinessChat-配合iMessage应用将商家与用户紧密的结合起来，为商家提供另外一种非常方便的客服系统";
 			sourceTree = "<group>";
 		};
-		35E34259228A8C4F006381A9 /* Foundation */ = {
+		35E34259228A8C4F006381A9 /* Foundation-NS系列基础类 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3425A228A8C4F006381A9 /* Foundation.framework */,
 			);
-			path = Foundation;
+			path = "Foundation-NS系列基础类";
 			sourceTree = "<group>";
 		};
-		35E3425B228A8C4F006381A9 /* CoreTelephony */ = {
+		35E3425B228A8C4F006381A9 /* CoreTelephony-获取运营商信息、监听通话状态 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3425C228A8C4F006381A9 /* CoreTelephony.framework */,
 			);
-			path = CoreTelephony;
+			path = "CoreTelephony-获取运营商信息、监听通话状态";
 			sourceTree = "<group>";
 		};
 		35E3425D228A8C50006381A9 /* SystemConfiguration */ = {
@@ -1870,28 +1870,28 @@
 			path = HealthKitUI;
 			sourceTree = "<group>";
 		};
-		35E34265228A8C50006381A9 /* CoreBluetooth */ = {
+		35E34265228A8C50006381A9 /* CoreBluetooth-蓝牙框架 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34266228A8C50006381A9 /* CoreBluetooth.framework */,
 			);
-			path = CoreBluetooth;
+			path = "CoreBluetooth-蓝牙框架";
 			sourceTree = "<group>";
 		};
-		35E34267228A8C50006381A9 /* AudioUnit */ = {
+		35E34267228A8C50006381A9 /* AudioUnit-提供高效，模块化音频处理方案 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34268228A8C50006381A9 /* AudioUnit.framework */,
 			);
-			path = AudioUnit;
+			path = "AudioUnit-提供高效，模块化音频处理方案";
 			sourceTree = "<group>";
 		};
-		35E34269228A8C50006381A9 /* CallKit */ = {
+		35E34269228A8C50006381A9 /* CallKit-能将微信、QQ等网络电话整合成系统级通话，使用起来和手机本身的通话功能完全相同（工信部禁止使用，影响三大运营商利益） */ = {
 			isa = PBXGroup;
 			children = (
 				35E3426A228A8C50006381A9 /* CallKit.framework */,
 			);
-			path = CallKit;
+			path = "CallKit-能将微信、QQ等网络电话整合成系统级通话，使用起来和手机本身的通话功能完全相同（工信部禁止使用，影响三大运营商利益）";
 			sourceTree = "<group>";
 		};
 		35E3426B228A8C50006381A9 /* IOSurface */ = {
@@ -1902,12 +1902,12 @@
 			path = IOSurface;
 			sourceTree = "<group>";
 		};
-		35E3426D228A8C51006381A9 /* AddressBook */ = {
+		35E3426D228A8C51006381A9 /* AddressBook-通讯录 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3426E228A8C51006381A9 /* AddressBook.framework */,
 			);
-			path = AddressBook;
+			path = "AddressBook-通讯录";
 			sourceTree = "<group>";
 		};
 		35E3426F228A8C51006381A9 /* SpriteKit */ = {
@@ -1918,20 +1918,20 @@
 			path = SpriteKit;
 			sourceTree = "<group>";
 		};
-		35E34271228A8C51006381A9 /* CoreNFC */ = {
+		35E34271228A8C51006381A9 /* CoreNFC-NFC技术（短距高频的无线电技术） */ = {
 			isa = PBXGroup;
 			children = (
 				35E34272228A8C51006381A9 /* CoreNFC.framework */,
 			);
-			path = CoreNFC;
+			path = "CoreNFC-NFC技术（短距高频的无线电技术）";
 			sourceTree = "<group>";
 		};
-		35E34273228A8C51006381A9 /* CoreText */ = {
+		35E34273228A8C51006381A9 /* CoreText-文本显示的一个底层框架，它是用C语言写成的 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34274228A8C51006381A9 /* CoreText.framework */,
 			);
-			path = CoreText;
+			path = "CoreText-文本显示的一个底层框架，它是用C语言写成的";
 			sourceTree = "<group>";
 		};
 		35E34275228A8C51006381A9 /* StoreKit */ = {
@@ -1942,12 +1942,12 @@
 			path = StoreKit;
 			sourceTree = "<group>";
 		};
-		35E34277228A8C51006381A9 /* CoreFoundation */ = {
+		35E34277228A8C51006381A9 /* CoreFoundation-是一组C语言接口，它们为iOS应用程序提供基本数据管理和服务功能 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34278228A8C51006381A9 /* CoreFoundation.framework */,
 			);
-			path = CoreFoundation;
+			path = "CoreFoundation-是一组C语言接口，它们为iOS应用程序提供基本数据管理和服务功能";
 			sourceTree = "<group>";
 		};
 		35E34279228A8C51006381A9 /* QuickLook */ = {
@@ -1982,12 +1982,12 @@
 			path = UserNotificationsUI;
 			sourceTree = "<group>";
 		};
-		35E34281228A8C52006381A9 /* AudioToolbox */ = {
+		35E34281228A8C52006381A9 /* AudioToolbox-是专门处理声音的一个框架，这个库是C的接口，偏向于底层，用于在线流媒体音乐的播放 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34282228A8C52006381A9 /* AudioToolbox.framework */,
 			);
-			path = AudioToolbox;
+			path = "AudioToolbox-是专门处理声音的一个框架，这个库是C的接口，偏向于底层，用于在线流媒体音乐的播放";
 			sourceTree = "<group>";
 		};
 		35E34283228A8C52006381A9 /* UIKit */ = {
@@ -1998,20 +1998,20 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		35E34285228A8C52006381A9 /* CoreLocation */ = {
+		35E34285228A8C52006381A9 /* CoreLocation-定位服务 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34286228A8C52006381A9 /* CoreLocation.framework */,
 			);
-			path = CoreLocation;
+			path = "CoreLocation-定位服务";
 			sourceTree = "<group>";
 		};
-		35E34287228A8C52006381A9 /* CoreImage */ = {
+		35E34287228A8C52006381A9 /* CoreImage-iOS中的图像处理框架 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34288228A8C52006381A9 /* CoreImage.framework */,
 			);
-			path = CoreImage;
+			path = "CoreImage-iOS中的图像处理框架";
 			sourceTree = "<group>";
 		};
 		35E34289228A8C52006381A9 /* GSS */ = {
@@ -2022,28 +2022,28 @@
 			path = GSS;
 			sourceTree = "<group>";
 		};
-		35E3428B228A8C52006381A9 /* FileProvider */ = {
+		35E3428B228A8C52006381A9 /* FileProvider-实施File Provider扩展，以便其他应用程序可以访问您的包含应用程序存储和管理的文档和目录 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3428C228A8C52006381A9 /* FileProvider.framework */,
 			);
-			path = FileProvider;
+			path = "FileProvider-实施File Provider扩展，以便其他应用程序可以访问您的包含应用程序存储和管理的文档和目录";
 			sourceTree = "<group>";
 		};
-		35E3428D228A8C53006381A9 /* ExternalAccessory */ = {
+		35E3428D228A8C53006381A9 /* ExternalAccessory-支持通过Apple Lightning或30针连接器或使用蓝牙无线连接与连接到基于iOS的设备的外部硬件进行通信 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3428E228A8C53006381A9 /* ExternalAccessory.framework */,
 			);
-			path = ExternalAccessory;
+			path = "ExternalAccessory-支持通过Apple Lightning或30针连接器或使用蓝牙无线连接与连接到基于iOS的设备的外部硬件进行通信";
 			sourceTree = "<group>";
 		};
-		35E3428F228A8C53006381A9 /* GameController */ = {
+		35E3428F228A8C53006381A9 /* GameController-游戏手柄控制 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34290228A8C53006381A9 /* GameController.framework */,
 			);
-			path = GameController;
+			path = "GameController-游戏手柄控制";
 			sourceTree = "<group>";
 		};
 		35E34291228A8C53006381A9 /* PDFKit */ = {
@@ -2070,20 +2070,20 @@
 			path = MobileCoreServices;
 			sourceTree = "<group>";
 		};
-		35E34297228A8C55006381A9 /* CFNetwork */ = {
+		35E34297228A8C55006381A9 /* CFNetwork-比较底层的网络框架，C语言编写，可以控制一些更底层的东西，如各种常用网络协议、socket通讯等 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34298228A8C55006381A9 /* CFNetwork.framework */,
 			);
-			path = CFNetwork;
+			path = "CFNetwork-比较底层的网络框架，C语言编写，可以控制一些更底层的东西，如各种常用网络协议、socket通讯等";
 			sourceTree = "<group>";
 		};
-		35E34299228A8C56006381A9 /* Contacts */ = {
+		35E34299228A8C56006381A9 /* Contacts-iOS9.0 替代AddressBook.framework的框架 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3429A228A8C56006381A9 /* Contacts.framework */,
 			);
-			path = Contacts;
+			path = "Contacts-iOS9.0 替代AddressBook.framework的框架";
 			sourceTree = "<group>";
 		};
 		35E3429B228A8C56006381A9 /* HealthKit */ = {
@@ -2094,12 +2094,12 @@
 			path = HealthKit;
 			sourceTree = "<group>";
 		};
-		35E3429D228A8C56006381A9 /* AdSupport */ = {
+		35E3429D228A8C56006381A9 /* AdSupport-获取设备唯一的一个广告标识符 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3429E228A8C56006381A9 /* AdSupport.framework */,
 			);
-			path = AdSupport;
+			path = "AdSupport-获取设备唯一的一个广告标识符";
 			sourceTree = "<group>";
 		};
 		35E3429F228A8C56006381A9 /* OpenGLES */ = {
@@ -2118,12 +2118,12 @@
 			path = NetworkExtension;
 			sourceTree = "<group>";
 		};
-		35E342A3228A8C57006381A9 /* CloudKit */ = {
+		35E342A3228A8C57006381A9 /* CloudKit-云端数据库,存储数据,提供简单的增删改查功能（相当于操作你个人的苹果后台服务器） */ = {
 			isa = PBXGroup;
 			children = (
 				35E342A4228A8C57006381A9 /* CloudKit.framework */,
 			);
-			path = CloudKit;
+			path = "CloudKit-云端数据库,存储数据,提供简单的增删改查功能（相当于操作你个人的苹果后台服务器）";
 			sourceTree = "<group>";
 		};
 		35E342A5228A8C57006381A9 /* Speech */ = {
@@ -2150,12 +2150,12 @@
 			path = PushKit;
 			sourceTree = "<group>";
 		};
-		35E342AB228A8C57006381A9 /* AssetsLibrary */ = {
+		35E342AB228A8C57006381A9 /* AssetsLibrary-获取相册视频以及图片 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342AC228A8C57006381A9 /* AssetsLibrary.framework */,
 			);
-			path = AssetsLibrary;
+			path = "AssetsLibrary-获取相册视频以及图片";
 			sourceTree = "<group>";
 		};
 		35E342AD228A8C57006381A9 /* OpenAL */ = {
@@ -2166,12 +2166,12 @@
 			path = OpenAL;
 			sourceTree = "<group>";
 		};
-		35E342AF228A8C58006381A9 /* CoreAudio */ = {
+		35E342AF228A8C58006381A9 /* CoreAudio-提供对音频文件操作的底层接口 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342B0228A8C58006381A9 /* CoreAudio.framework */,
 			);
-			path = CoreAudio;
+			path = "CoreAudio-提供对音频文件操作的底层接口";
 			sourceTree = "<group>";
 		};
 		35E342B1228A8C58006381A9 /* GameplayKit */ = {
@@ -2198,20 +2198,20 @@
 			path = Vision;
 			sourceTree = "<group>";
 		};
-		35E342B7228A8C58006381A9 /* CoreData */ = {
+		35E342B7228A8C58006381A9 /* CoreData-iOS系统提供的数据存储方式 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342B8228A8C58006381A9 /* CoreData.framework */,
 			);
-			path = CoreData;
+			path = "CoreData-iOS系统提供的数据存储方式";
 			sourceTree = "<group>";
 		};
-		35E342B9228A8C58006381A9 /* CarPlay */ = {
+		35E342B9228A8C58006381A9 /* CarPlay-为app加入CarPlay的功能，在车载显示屏上操作 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342BA228A8C58006381A9 /* CarPlay.framework */,
 			);
-			path = CarPlay;
+			path = "CarPlay-为app加入CarPlay的功能，在车载显示屏上操作";
 			sourceTree = "<group>";
 		};
 		35E342BB228A8C58006381A9 /* VideoToolbox */ = {
@@ -2238,12 +2238,12 @@
 			path = HomeKit;
 			sourceTree = "<group>";
 		};
-		35E342C1228A8C59006381A9 /* CoreGraphics */ = {
+		35E342C1228A8C59006381A9 /* CoreGraphics-提供2D绘图的框架 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342C2228A8C59006381A9 /* CoreGraphics.framework */,
 			);
-			path = CoreGraphics;
+			path = "CoreGraphics-提供2D绘图的框架";
 			sourceTree = "<group>";
 		};
 		35E342C3228A8C59006381A9 /* Intents */ = {
