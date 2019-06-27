@@ -1185,14 +1185,14 @@
 				35E341FB228A8C4B006381A9 /* FileProviderUI */,
 				35E34259228A8C4F006381A9 /* Foundation-NS系列基础类 */,
 				35E3428F228A8C53006381A9 /* GameController-游戏手柄控制 */,
-				35E3422B228A8C4C006381A9 /* GameKit */,
-				35E342B1228A8C58006381A9 /* GameplayKit */,
-				35E34237228A8C4D006381A9 /* GLKit */,
-				35E34289228A8C52006381A9 /* GSS */,
-				35E3429B228A8C56006381A9 /* HealthKit */,
+				35E3422B228A8C4C006381A9 /* GameKit-1.在游戏中增加对等链接 2.对等网络链接API 3.可以使用蓝牙在玩家之间创建网络 */,
+				35E342B1228A8C58006381A9 /* GameplayKit-为构建游戏提供基础工具和技术 */,
+				35E34237228A8C4D006381A9 /* GLKit-它为OpenGL ES的使用提供了相关的类和函数 */,
+				35E34289228A8C52006381A9 /* GSS-给ios应用提供一组标准安全相关的服务 */,
+				35E3429B228A8C56006381A9 /* HealthKit-收集和存储健康和健身数据 分析和可视化数据 实现社交互动 */,
 				35E34263228A8C50006381A9 /* HealthKitUI */,
-				35E342BF228A8C59006381A9 /* HomeKit */,
-				35E3420D228A8C4B006381A9 /* iAd */,
+				35E342BF228A8C59006381A9 /* HomeKit-用来沟通和控制家庭自动化配件的 */,
+				35E3420D228A8C4B006381A9 /* iAd-添加广告 */,
 				35E34241228A8C4E006381A9 /* IdentityLookup */,
 				35E3423B228A8C4D006381A9 /* IdentityLookupUI */,
 				35E3427B228A8C51006381A9 /* ImageIO */,
@@ -1517,12 +1517,12 @@
 			path = "EventKit-日历事件操作（提醒）";
 			sourceTree = "<group>";
 		};
-		35E3420D228A8C4B006381A9 /* iAd */ = {
+		35E3420D228A8C4B006381A9 /* iAd-添加广告 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3420E228A8C4B006381A9 /* iAd.framework */,
 			);
-			path = iAd;
+			path = "iAd-添加广告";
 			sourceTree = "<group>";
 		};
 		35E3420F228A8C4B006381A9 /* MapKit */ = {
@@ -1637,12 +1637,12 @@
 			path = "DeviceCheck-允许你通过你的服务器与 Apple 服务器通讯，并为单个设备设置两个 bit 的数据";
 			sourceTree = "<group>";
 		};
-		35E3422B228A8C4C006381A9 /* GameKit */ = {
+		35E3422B228A8C4C006381A9 /* GameKit-1.在游戏中增加对等链接 2.对等网络链接API 3.可以使用蓝牙在玩家之间创建网络 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3422C228A8C4C006381A9 /* GameKit.framework */,
 			);
-			path = GameKit;
+			path = "GameKit-1.在游戏中增加对等链接 2.对等网络链接API 3.可以使用蓝牙在玩家之间创建网络";
 			sourceTree = "<group>";
 		};
 		35E3422D228A8C4D006381A9 /* MetalKit */ = {
@@ -1685,12 +1685,12 @@
 			path = "CoreAudioKit-提供了一个简单的音频界面，并且是跨应用的";
 			sourceTree = "<group>";
 		};
-		35E34237228A8C4D006381A9 /* GLKit */ = {
+		35E34237228A8C4D006381A9 /* GLKit-它为OpenGL ES的使用提供了相关的类和函数 */ = {
 			isa = PBXGroup;
 			children = (
 				35E34238228A8C4D006381A9 /* GLKit.framework */,
 			);
-			path = GLKit;
+			path = "GLKit-它为OpenGL ES的使用提供了相关的类和函数";
 			sourceTree = "<group>";
 		};
 		35E34239228A8C4D006381A9 /* PhotosUI */ = {
@@ -2014,12 +2014,12 @@
 			path = "CoreImage-iOS中的图像处理框架";
 			sourceTree = "<group>";
 		};
-		35E34289228A8C52006381A9 /* GSS */ = {
+		35E34289228A8C52006381A9 /* GSS-给ios应用提供一组标准安全相关的服务 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3428A228A8C52006381A9 /* GSS.framework */,
 			);
-			path = GSS;
+			path = "GSS-给ios应用提供一组标准安全相关的服务";
 			sourceTree = "<group>";
 		};
 		35E3428B228A8C52006381A9 /* FileProvider-实施File Provider扩展，以便其他应用程序可以访问您的包含应用程序存储和管理的文档和目录 */ = {
@@ -2086,12 +2086,12 @@
 			path = "Contacts-iOS9.0 替代AddressBook.framework的框架";
 			sourceTree = "<group>";
 		};
-		35E3429B228A8C56006381A9 /* HealthKit */ = {
+		35E3429B228A8C56006381A9 /* HealthKit-收集和存储健康和健身数据 分析和可视化数据 实现社交互动 */ = {
 			isa = PBXGroup;
 			children = (
 				35E3429C228A8C56006381A9 /* HealthKit.framework */,
 			);
-			path = HealthKit;
+			path = "HealthKit-收集和存储健康和健身数据 分析和可视化数据 实现社交互动";
 			sourceTree = "<group>";
 		};
 		35E3429D228A8C56006381A9 /* AdSupport-获取设备唯一的一个广告标识符 */ = {
@@ -2174,12 +2174,12 @@
 			path = "CoreAudio-提供对音频文件操作的底层接口";
 			sourceTree = "<group>";
 		};
-		35E342B1228A8C58006381A9 /* GameplayKit */ = {
+		35E342B1228A8C58006381A9 /* GameplayKit-为构建游戏提供基础工具和技术 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342B2228A8C58006381A9 /* GameplayKit.framework */,
 			);
-			path = GameplayKit;
+			path = "GameplayKit-为构建游戏提供基础工具和技术";
 			sourceTree = "<group>";
 		};
 		35E342B3228A8C58006381A9 /* MediaPlayer */ = {
@@ -2230,12 +2230,12 @@
 			path = JavaScriptCore;
 			sourceTree = "<group>";
 		};
-		35E342BF228A8C59006381A9 /* HomeKit */ = {
+		35E342BF228A8C59006381A9 /* HomeKit-用来沟通和控制家庭自动化配件的 */ = {
 			isa = PBXGroup;
 			children = (
 				35E342C0228A8C59006381A9 /* HomeKit.framework */,
 			);
-			path = HomeKit;
+			path = "HomeKit-用来沟通和控制家庭自动化配件的";
 			sourceTree = "<group>";
 		};
 		35E342C1228A8C59006381A9 /* CoreGraphics-提供2D绘图的框架 */ = {
