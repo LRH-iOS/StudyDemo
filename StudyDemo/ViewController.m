@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AccountsViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [self.navigationController pushViewController:[[AccountsViewController alloc] init] animated:YES];
+    
 }
 
 

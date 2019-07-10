@@ -6,15 +6,16 @@
 //
 
 /**
- *  ACAccountStore类提供了一个用于访问，操作和存储帐户的接口。 要从“帐户”数据库创建和检索帐户，您必须创建一个ACAccountStore对象。 每个ACAccount对象都属于一个ACAccountStore对象。
+ *  ACAccountStore类提供了一个用于访问，操作和存储帐户的接口。
+ *  要从“帐户”数据库创建和检索帐户，您必须创建一个ACAccountStore对象。 每个ACAccount对象都属于一个ACAccountStore对象。
  */
 #import <Foundation/Foundation.h>
 #import <Accounts/AccountsDefines.h>
 
 typedef NS_ENUM(NSInteger, ACAccountCredentialRenewResult) {
-    ACAccountCredentialRenewResultRenewed,  // A new credential was obtained and is now associated with the account.
-    ACAccountCredentialRenewResultRejected, // Renewal failed because of a user-initiated action.
-    ACAccountCredentialRenewResultFailed,   // A non-user-initiated cancel of the prompt. 
+    ACAccountCredentialRenewResultRenewed,  // A new credential was obtained and is now associated with the account. //获得了一个新凭据，现在与该帐户关联
+    ACAccountCredentialRenewResultRejected, // Renewal failed because of a user-initiated action. //由于用户启动的操作，续订失败。
+    ACAccountCredentialRenewResultFailed,   // A non-user-initiated cancel of the prompt.  //非用户启动的取消提示
 };
 
 typedef void(^ACAccountStoreSaveCompletionHandler)(BOOL success, NSError *error);
@@ -66,16 +67,23 @@ API_AVAILABLE(ios(5.0), macos(10.8))
 // appears in ACAccountType.h. This method will throw an NSInvalidArgumentException if the options
 // dictionary is not provided for such account types. Conversely, if the account type does not require
 // an options dictionary, the options parameter must be nil.
+// 在调用requestAccessToAccountsWithType方法时，options 可以传入一个字典参数，某些社交平台的授权需要配置一些额外参数
 - (void)requestAccessToAccountsWithType:(ACAccountType *)accountType options:(NSDictionary *)options completion:(ACAccountStoreRequestAccessCompletionHandler)completion;
 
 // Call this if you discover that an ACAccount's credential is no longer valid.
 // For Twitter and Sina Weibo accounts, this method will prompt the user to go to Settings to re-enter their password.
 // For Facebook accounts, if your access token became invalid due to regular expiration, this method will obtain a new one.
 // However, if the user has deauthorized your app, this renewal request will return ACAccountCredentialRenewResultRejected.
+// 如果发现acaccount的凭据不再有效，则调用此函数。
+// 对于Twitter和新浪微博账号，该方法会提示用户进入设置，重新输入密码。
+// 对于facebook账户，如果您的访问令牌因定期到期而失效，该方法将获得一个新的访问令牌。
+// 但是，如果用户已重新授权您的应用程序，则此续订请求将返回AcaccountCredentialRenewResultRejected。
 - (void)renewCredentialsForAccount:(ACAccount *)account completion:(ACAccountStoreCredentialRenewalHandler)completionHandler;
 
 // Removes an account from the account store. The completion handler for this method is called on an arbitrary queue.
 // This call will fail if you don't have sufficient rights to remove the account in question.
+// 从帐户存储中删除帐户。在任意队列上调用此方法的完成处理程序。
+// 如果您没有足够的权限删除相关帐户，则此调用将失败。
 - (void)removeAccount:(ACAccount *)account withCompletionHandler:(ACAccountStoreRemoveCompletionHandler)completionHandler;
 
 @end

@@ -37,14 +37,17 @@ API_AVAILABLE(ios(5.0), macos(10.8))
 
 // The username for the account. This property can be set and saved during account creation. The username is
 // only available to applications that have been granted access to the account by the user.
+// 帐户的用户名。此属性可以在创建帐户时设置和保存。用户名仅适用于已被用户授予访问帐户权限的应用程序。
 @property (copy, NS_NONATOMIC_IOSONLY)     NSString            *username;
 
 // For accounts that support it (currently only Facebook accounts), you can get the user's full name for display
 // purposes without having to talk to the network.
+// 对于支持它的帐户（当前仅限于Facebook帐户），您可以获取用户的全名进行显示无需与网络通信的目的。
 @property (readonly, NS_NONATOMIC_IOSONLY)  NSString           *userFullName API_AVAILABLE(ios(7.0)) API_UNAVAILABLE(macos);
 
 // The credential for the account. This property can be set and saved during account creation. It is
 // inaccessible once the account has been saved.
+// 帐户的凭据。此属性可以在创建帐户时设置和保存。保存帐户后无法访问。
 @property (strong, NS_NONATOMIC_IOSONLY)   ACAccountCredential *credential;
 
 @end

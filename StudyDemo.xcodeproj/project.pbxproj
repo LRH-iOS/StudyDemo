@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A358D522D602E900900356 /* Accounts_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35A358D422D602E900900356 /* Accounts_README.md */; };
+		35A358DD22D60B1400900356 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A358DC22D60B1400900356 /* AccountsViewController.m */; };
+		35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */; };
 		35E34141228A5A68006381A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E34140228A5A68006381A9 /* AppDelegate.m */; };
 		35E34144228A5A68006381A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E34143228A5A68006381A9 /* ViewController.m */; };
 		35E34147228A5A68006381A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E34145228A5A68006381A9 /* Main.storyboard */; };
@@ -72,7 +75,6 @@
 		35E34303228A8C5A006381A9 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E34262228A8C50006381A9 /* Photos.framework */; };
 		35E34304228A8C5A006381A9 /* HealthKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E34264228A8C50006381A9 /* HealthKitUI.framework */; };
 		35E34305228A8C5A006381A9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E34266228A8C50006381A9 /* CoreBluetooth.framework */; };
-		35E34306228A8C5A006381A9 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E34268228A8C50006381A9 /* AudioUnit.framework */; };
 		35E34307228A8C5A006381A9 /* CallKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E3426A228A8C50006381A9 /* CallKit.framework */; };
 		35E34308228A8C5A006381A9 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E3426C228A8C50006381A9 /* IOSurface.framework */; };
 		35E34309228A8C5A006381A9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E3426E228A8C51006381A9 /* AddressBook.framework */; };
@@ -145,6 +147,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35A358D422D602E900900356 /* Accounts_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Accounts_README.md; sourceTree = "<group>"; };
+		35A358DB22D60B1400900356 /* AccountsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		35A358DC22D60B1400900356 /* AccountsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		35A358DE22D60F7F00900356 /* UIViewController+BaseSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseSetup.h"; sourceTree = "<group>"; };
+		35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseSetup.m"; sourceTree = "<group>"; };
 		35E3413C228A5A68006381A9 /* StudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E3413F228A5A68006381A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35E34140228A5A68006381A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -218,7 +225,6 @@
 		35E34262228A8C50006381A9 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Photos.framework; sourceTree = "<group>"; };
 		35E34264228A8C50006381A9 /* HealthKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HealthKitUI.framework; sourceTree = "<group>"; };
 		35E34266228A8C50006381A9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreBluetooth.framework; sourceTree = "<group>"; };
-		35E34268228A8C50006381A9 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioUnit.framework; sourceTree = "<group>"; };
 		35E3426A228A8C50006381A9 /* CallKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CallKit.framework; sourceTree = "<group>"; };
 		35E3426C228A8C50006381A9 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IOSurface.framework; sourceTree = "<group>"; };
 		35E3426E228A8C51006381A9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AddressBook.framework; sourceTree = "<group>"; };
@@ -1000,7 +1006,6 @@
 				35E34328228A8C5B006381A9 /* AssetsLibrary.framework in Frameworks */,
 				35E3431C228A8C5A006381A9 /* NewsstandKit.framework in Frameworks */,
 				35E34319228A8C5A006381A9 /* ExternalAccessory.framework in Frameworks */,
-				35E34306228A8C5A006381A9 /* AudioUnit.framework in Frameworks */,
 				35E34323228A8C5B006381A9 /* NetworkExtension.framework in Frameworks */,
 				35E342F4228A8C5A006381A9 /* ModelIO.framework in Frameworks */,
 				35E342D3228A8C5A006381A9 /* QuartzCore.framework in Frameworks */,
@@ -1080,6 +1085,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35A358D322D6028B00900356 /* AccountsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35A358D422D602E900900356 /* Accounts_README.md */,
+				35A358DB22D60B1400900356 /* AccountsViewController.h */,
+				35A358DC22D60B1400900356 /* AccountsViewController.m */,
+			);
+			path = AccountsDemo;
+			sourceTree = "<group>";
+		};
 		35E34133228A5A68006381A9 = {
 			isa = PBXGroup;
 			children = (
@@ -1107,6 +1122,8 @@
 				35E34140228A5A68006381A9 /* AppDelegate.m */,
 				35E34142228A5A68006381A9 /* ViewController.h */,
 				35E34143228A5A68006381A9 /* ViewController.m */,
+				35A358DE22D60F7F00900356 /* UIViewController+BaseSetup.h */,
+				35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */,
 				35E34172228A5AE7006381A9 /* usr_include */,
 				35E34171228A5ACF006381A9 /* Frameworks */,
 				35E34145228A5A68006381A9 /* Main.storyboard */,
@@ -1147,7 +1164,6 @@
 				35E34221228A8C4C006381A9 /* ARKit-AR技术功能 */,
 				35E342AB228A8C57006381A9 /* AssetsLibrary-获取相册视频以及图片 */,
 				35E34281228A8C52006381A9 /* AudioToolbox-是专门处理声音的一个框架，这个库是C的接口，偏向于底层，用于在线流媒体音乐的播放 */,
-				35E34267228A8C50006381A9 /* AudioUnit-提供高效，模块化音频处理方案 */,
 				35E34225228A8C4C006381A9 /* AuthenticationServices-身份验证服务、密码填充 */,
 				35E34233228A8C4D006381A9 /* AVFoundation-是一个强大的多媒体处理框架，它基于CoreMedia、CoreAudio、CoreVideo、CoreAnimation等框架，所以我们对音视频的处理大多数时候都是用它 */,
 				35E341F9228A8C4B006381A9 /* AVKit-基于AVFoundation框架，提供了一个用于播放视频内容的高级界面，创建用于媒体播放的视图级服务 */,
@@ -1878,14 +1894,6 @@
 			path = "CoreBluetooth-蓝牙框架";
 			sourceTree = "<group>";
 		};
-		35E34267228A8C50006381A9 /* AudioUnit-提供高效，模块化音频处理方案 */ = {
-			isa = PBXGroup;
-			children = (
-				35E34268228A8C50006381A9 /* AudioUnit.framework */,
-			);
-			path = "AudioUnit-提供高效，模块化音频处理方案";
-			sourceTree = "<group>";
-		};
 		35E34269228A8C50006381A9 /* CallKit-能将微信、QQ等网络电话整合成系统级通话，使用起来和手机本身的通话功能完全相同（工信部禁止使用，影响三大运营商利益） */ = {
 			isa = PBXGroup;
 			children = (
@@ -2137,6 +2145,7 @@
 		35E342A7228A8C57006381A9 /* Accounts-提供对存储在帐户数据库中的用户帐户的访问 */ = {
 			isa = PBXGroup;
 			children = (
+				35A358D322D6028B00900356 /* AccountsDemo */,
 				35E342A8228A8C57006381A9 /* Accounts.framework */,
 			);
 			path = "Accounts-提供对存储在帐户数据库中的用户帐户的访问";
@@ -3221,6 +3230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A358D522D602E900900356 /* Accounts_README.md in Resources */,
 				35E3414C228A5A6A006381A9 /* LaunchScreen.storyboard in Resources */,
 				35E34149228A5A6A006381A9 /* Assets.xcassets in Resources */,
 				35E34604228A8D4C006381A9 /* ObjectiveC.apinotes in Resources */,
@@ -3252,6 +3262,8 @@
 			files = (
 				35E34144228A5A68006381A9 /* ViewController.m in Sources */,
 				35E3414F228A5A6A006381A9 /* main.m in Sources */,
+				35A358DD22D60B1400900356 /* AccountsViewController.m in Sources */,
+				35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */,
 				35E34141228A5A68006381A9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3424,117 +3436,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Metal",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WebKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AVKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/FileProviderUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IOKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreML",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/QuartzCore",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ReplayKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Network",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMIDI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/EventKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/iAd",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MapKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MetalPerformanceShaders",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NaturalLanguage",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMedia",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SafariServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WatchConnectivity",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Security",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ClassKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IntentsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ARKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Social",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AuthenticationServeices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMotion",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/DeviceCheck",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MetalKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MessageUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/EventKitUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AVFoundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreAudioKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GLKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PhotosUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IdentityLookupUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AddressBookUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreVideo",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IdentityLookup",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ModelIO",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ScenKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Messages",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Accelerate",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MultipeerConnectivity",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreSpotlight",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PassKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UserNotifications",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ContactsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/LocalAuthentication",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/BusinessChat",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Foundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreTelephony",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SystemConfiguration",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/VideoSubscriberAccount",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Photos",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HealthKitUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreBluetooth",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AudioUnit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CallKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IOSurface",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AddressBook",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SpriteKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreNFC",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreText",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/StoreKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreFoundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/QuickLook",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ImageIO",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaAccessibility",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UserNotificationsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AudioToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UIKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreLocation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreImage",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GSS",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/FileProvider",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ExternalAccessory",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameController",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PDFKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NewsstandKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MobileCoreServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CFNetwork",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Contacts",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HealthKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AdSupport",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/OpenGLES",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NetworkExtension",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CloudKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Speech",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Accounts",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PushKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AssetsLibrary",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/OpenAL",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreAudio",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameplayKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaPlayer",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Vision",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreData",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CarPlay",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/VideoToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/JavaScriptCore",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HomeKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreGraphics",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Intents",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Twitter",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NotificationCenter",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WatchKit",
-				);
+				DEVELOPMENT_TEAM = PJ978Y5YRQ;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = StudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3551,117 +3454,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Metal",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WebKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AVKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/FileProviderUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IOKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreML",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/QuartzCore",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ReplayKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Network",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMIDI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/EventKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/iAd",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MapKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MetalPerformanceShaders",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NaturalLanguage",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMedia",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SafariServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WatchConnectivity",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Security",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ClassKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IntentsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ARKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Social",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AuthenticationServeices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreMotion",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/DeviceCheck",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MetalKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MessageUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/EventKitUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AVFoundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreAudioKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GLKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PhotosUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IdentityLookupUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AddressBookUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreVideo",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IdentityLookup",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ModelIO",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ScenKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Messages",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Accelerate",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MultipeerConnectivity",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreSpotlight",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PassKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UserNotifications",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ContactsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/LocalAuthentication",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/BusinessChat",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Foundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreTelephony",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SystemConfiguration",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/VideoSubscriberAccount",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Photos",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HealthKitUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreBluetooth",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AudioUnit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CallKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/IOSurface",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AddressBook",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/SpriteKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreNFC",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreText",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/StoreKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreFoundation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/QuickLook",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ImageIO",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaAccessibility",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UserNotificationsUI",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AudioToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/UIKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreLocation",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreImage",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GSS",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/FileProvider",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/ExternalAccessory",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameController",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PDFKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NewsstandKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MobileCoreServices",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CFNetwork",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Contacts",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HealthKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AdSupport",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/OpenGLES",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NetworkExtension",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CloudKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Speech",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Accounts",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/PushKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/AssetsLibrary",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/OpenAL",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreAudio",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/GameplayKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaPlayer",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Vision",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreData",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CarPlay",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/VideoToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/JavaScriptCore",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/HomeKit",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreGraphics",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Intents",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/MediaToolbox",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/Twitter",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/NotificationCenter",
-					"$(PROJECT_DIR)/StudyDemo/Frameworks/WatchKit",
-				);
+				DEVELOPMENT_TEAM = PJ978Y5YRQ;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = StudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

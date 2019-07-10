@@ -6,7 +6,9 @@
 //
 
 /**
- *  ACAccountType对象封装有关特定类型的所有帐户的信息。 您不直接创建帐户类型对象。 要获取帐户类型，请使用 accountTypeWithAccountTypeIdentifier:方法或帐户对象的accountType属性。 Account Type Identifiers描述当前支持的帐户类型的标识符。 您也可以使用accountsWithAccountType:方法来获取特定类型的所有帐户。
+ *  ACAccountType对象封装有关特定类型的所有帐户的信息。
+ *  您不直接创建帐户类型对象。 要获取帐户类型，请使用 accountTypeWithAccountTypeIdentifier:方法或帐户对象的accountType属性。
+ *  Account Type Identifiers描述当前支持的帐户类型的标识符。 您也可以使用accountsWithAccountType:方法来获取特定类型的所有帐户。
  */
 #import <Foundation/Foundation.h>
 #import <Accounts/AccountsDefines.h>
@@ -43,12 +45,14 @@ API_AVAILABLE(ios(5.0), macos(10.8))
 @interface ACAccountType : NSObject
 
 // A human readable description of the account type.
+// 账户描述
 @property (readonly, nonatomic) NSString *accountTypeDescription;
 
 // A unique identifier for the account type. Well known system account type identifiers are listed above.
 @property (readonly, nonatomic) NSString *identifier;
 
 // A boolean indicating whether the user has granted access to accounts of this type for your application.
+// 指示用户是否已为您的应用程序授予此类型帐户的访问权限。
 @property (readonly, nonatomic) BOOL     accessGranted;
 
 @end
