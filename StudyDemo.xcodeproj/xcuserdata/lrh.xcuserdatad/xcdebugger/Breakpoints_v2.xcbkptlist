@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyDemo/Frameworks/Accounts-&#x63d0;&#x4f9b;&#x5bf9;&#x5b58;&#x50a8;&#x5728;&#x5e10;&#x6237;&#x6570;&#x636e;&#x5e93;&#x4e2d;&#x7684;&#x7528;&#x6237;&#x5e10;&#x6237;&#x7684;&#x8bbf;&#x95ee;/AccountsDemo/AccountsViewController.m"
+            timestampString = "584454775.8804981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-setupAccounts"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyDemo/Frameworks/Accounts-&#x63d0;&#x4f9b;&#x5bf9;&#x5b58;&#x50a8;&#x5728;&#x5e10;&#x6237;&#x6570;&#x636e;&#x5e93;&#x4e2d;&#x7684;&#x7528;&#x6237;&#x5e10;&#x6237;&#x7684;&#x8bbf;&#x95ee;/AccountsDemo/AccountsViewController.m"
+            timestampString = "584454775.880971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-setupAccounts"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AccountsViewController setupAccounts]"
+                  moduleName = "StudyDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lrh/Desktop/StudyDemo/StudyDemo/Frameworks/Accounts-%E6%8F%90%E4%BE%9B%E5%AF%B9%E5%AD%98%E5%82%A8%E5%9C%A8%E5%B8%90%E6%88%B7%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E7%94%A8%E6%88%B7%E5%B8%90%E6%88%B7%E7%9A%84%E8%AE%BF%E9%97%AE/AccountsDemo/AccountsViewController.m"
+                  timestampString = "584454776.640354"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__39-[AccountsViewController setupAccounts]_block_invoke"
+                  moduleName = "StudyDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lrh/Desktop/StudyDemo/StudyDemo/Frameworks/Accounts-%E6%8F%90%E4%BE%9B%E5%AF%B9%E5%AD%98%E5%82%A8%E5%9C%A8%E5%B8%90%E6%88%B7%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E7%94%A8%E6%88%B7%E5%B8%90%E6%88%B7%E7%9A%84%E8%AE%BF%E9%97%AE/AccountsDemo/AccountsViewController.m"
+                  timestampString = "584454776.642729"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "55">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.17"
+                  moduleName = "StudyDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lrh/Desktop/StudyDemo/StudyDemo/Frameworks/Accounts-%E6%8F%90%E4%BE%9B%E5%AF%B9%E5%AD%98%E5%82%A8%E5%9C%A8%E5%B8%90%E6%88%B7%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%AD%E7%9A%84%E7%94%A8%E6%88%B7%E5%B8%90%E6%88%B7%E7%9A%84%E8%AE%BF%E9%97%AE/AccountsDemo/AccountsViewController.m"
+                  timestampString = "584454776.6455899"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
