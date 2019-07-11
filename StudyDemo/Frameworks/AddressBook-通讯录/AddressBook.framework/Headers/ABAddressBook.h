@@ -18,8 +18,8 @@
 AB_EXTERN const CFStringRef ABAddressBookErrorDomain AB_DEPRECATED("use CNErrorDomain");
 
 enum {
-    kABOperationNotPermittedByStoreError = 0,   // deprecated, use CNErrorCodePolicyViolation
-    kABOperationNotPermittedByUserError         // deprecated, use CNErrorCodeAuthorizationDenied
+    kABOperationNotPermittedByStoreError = 0,   // deprecated, use CNErrorCodePolicyViolation        已弃用，请使用CNErrorCodePolicyViolation
+    kABOperationNotPermittedByUserError         // deprecated, use CNErrorCodeAuthorizationDenied    已弃用，请使用CNErrorCodeAuthorizationDenied
 };
 
 typedef CFTypeRef ABAddressBookRef AB_DEPRECATED("use CNContactStore");
