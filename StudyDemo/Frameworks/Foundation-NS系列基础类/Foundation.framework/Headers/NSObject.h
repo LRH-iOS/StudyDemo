@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /***************	Basic protocols		***************/
 
+/**
+ *  NSCopying是一个与对象拷贝有关的协议。如果想让一个类的对象支持拷贝，就需要让该类实现NSCopying协议
+ *  当我们的类实现了NSCopying协议，通过类的对象调用copy方法时，copy方法就会去调用我们实现的- (id)copyWithZone:(NSZone *)zone方法，实现拷贝功能
+ */
 @protocol NSCopying
 
 - (id)copyWithZone:(nullable NSZone *)zone;
@@ -26,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+/**
+ *  NSCoding是把数据存储在iOS和Mac OS上的一种极其简单和方便的方式，它把模型对象直接转变成一个文件，然后再把这个文件重新加载到内存里，并不需要任何文件解析和序列化的逻辑。
+ *  对象需要遵守NSCoding协议，并实现encodeWithCoder： 和initWithCoder： 方法
+ */
 @protocol NSCoding
 
 - (void)encodeWithCoder:(NSCoder *)aCoder;
@@ -36,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
 // Objects which are safe to be encoded and decoded across privilege boundaries should adopt NSSecureCoding instead of NSCoding. Secure coders (those that respond YES to requiresSecureCoding) will only encode objects that adopt the NSSecureCoding protocol.
 // NOTE: NSSecureCoding guarantees only that an archive contains the classes it claims. It makes no guarantees about the suitability for consumption by the receiver of the decoded content of the archive. Archived objects which  may trigger code evaluation should be validated independently by the consumer of the objects to verify that no malicious code is executed (i.e. by checking key paths, selectors etc. specified in the archive).
 
+/**
+ *  NSSecureCoding是NSCoding的衍生，因为NSCoding毕竟不太安全，
+ *  在原来encodeWithCoder： 和 initWithCoder： 的基础上实现supportsSecureCoding方法返回YES
+ */
 @protocol NSSecureCoding <NSCoding>
 @required
 // This property must return YES on all classes that allow secure coding. Subclasses of classes that adopt NSSecureCoding and override initWithCoder: must also override this method and return YES.

@@ -223,6 +223,8 @@
 		35B7191E22D6DF810083398D /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7184722D6DF7F0083398D /* ReplayKit.framework */; };
 		35B7191F22D6DF810083398D /* ReplayKit_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B7184822D6DF7F0083398D /* ReplayKit_README.md */; };
 		35B7192122D6E0CB0083398D /* ARKit_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B7192022D6E0CB0083398D /* ARKit_README.md */; };
+		35B7193022D7594C0083398D /* NSArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7192F22D7594C0083398D /* NSArrayViewController.m */; };
+		35B7193322D75C7D0083398D /* NSArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B7193222D75C7D0083398D /* NSArrayModel.m */; };
 		35E34141228A5A68006381A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E34140228A5A68006381A9 /* AppDelegate.m */; };
 		35E34144228A5A68006381A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E34143228A5A68006381A9 /* ViewController.m */; };
 		35E34147228A5A68006381A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E34145228A5A68006381A9 /* Main.storyboard */; };
@@ -472,6 +474,10 @@
 		35B7184722D6DF7F0083398D /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReplayKit.framework; sourceTree = "<group>"; };
 		35B7184822D6DF7F0083398D /* ReplayKit_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReplayKit_README.md; sourceTree = "<group>"; };
 		35B7192022D6E0CB0083398D /* ARKit_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ARKit_README.md; sourceTree = "<group>"; };
+		35B7192E22D7594C0083398D /* NSArrayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayViewController.h; sourceTree = "<group>"; };
+		35B7192F22D7594C0083398D /* NSArrayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayViewController.m; sourceTree = "<group>"; };
+		35B7193122D75C7D0083398D /* NSArrayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSArrayModel.h; sourceTree = "<group>"; };
+		35B7193222D75C7D0083398D /* NSArrayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayModel.m; sourceTree = "<group>"; };
 		35E3413C228A5A68006381A9 /* StudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E3413F228A5A68006381A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35E34140228A5A68006381A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1630,7 +1636,7 @@
 		35B7174C22D6DF7F0083398D /* Foundation-NS系列基础类 */ = {
 			isa = PBXGroup;
 			children = (
-				35B7174D22D6DF7F0083398D /* Foundation_README.md */,
+				35B7192C22D759200083398D /* FoundationDemo */,
 				35B7174E22D6DF7F0083398D /* Foundation.framework */,
 			);
 			path = "Foundation-NS系列基础类";
@@ -2383,6 +2389,26 @@
 				35B7184822D6DF7F0083398D /* ReplayKit_README.md */,
 			);
 			path = "ReplayKit-录制屏幕";
+			sourceTree = "<group>";
+		};
+		35B7192C22D759200083398D /* FoundationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35B7174D22D6DF7F0083398D /* Foundation_README.md */,
+				35B7192D22D759330083398D /* NSArrayDemo */,
+			);
+			path = FoundationDemo;
+			sourceTree = "<group>";
+		};
+		35B7192D22D759330083398D /* NSArrayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35B7192E22D7594C0083398D /* NSArrayViewController.h */,
+				35B7192F22D7594C0083398D /* NSArrayViewController.m */,
+				35B7193122D75C7D0083398D /* NSArrayModel.h */,
+				35B7193222D75C7D0083398D /* NSArrayModel.m */,
+			);
+			path = NSArrayDemo;
 			sourceTree = "<group>";
 		};
 		35E34133228A5A68006381A9 = {
@@ -3687,8 +3713,10 @@
 				35E34144228A5A68006381A9 /* ViewController.m in Sources */,
 				35E3414F228A5A6A006381A9 /* main.m in Sources */,
 				35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */,
+				35B7193022D7594C0083398D /* NSArrayViewController.m in Sources */,
 				35E34141228A5A68006381A9 /* AppDelegate.m in Sources */,
 				35B7189A22D6DF800083398D /* AccountsViewController.m in Sources */,
+				35B7193322D75C7D0083398D /* NSArrayModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

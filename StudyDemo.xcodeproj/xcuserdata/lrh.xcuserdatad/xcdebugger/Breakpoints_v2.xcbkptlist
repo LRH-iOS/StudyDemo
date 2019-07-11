@@ -4,19 +4,13 @@
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StudyDemo/Frameworks/Accounts-&#x63d0;&#x4f9b;&#x5bf9;&#x5b58;&#x50a8;&#x5728;&#x5e10;&#x6237;&#x6570;&#x636e;&#x5e93;&#x4e2d;&#x7684;&#x7528;&#x6237;&#x5e10;&#x6237;&#x7684;&#x8bbf;&#x95ee;/AccountsDemo/AccountsViewController.m"
-            timestampString = "584454775.8804981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-setupAccounts"
-            landmarkType = "7">
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "StudyDemo/Frameworks/Accounts-&#x63d0;&#x4f9b;&#x5bf9;&#x5b58;&#x50a8;&#x5728;&#x5e10;&#x6237;&#x6570;&#x636e;&#x5e93;&#x4e2d;&#x7684;&#x7528;&#x6237;&#x5e10;&#x6237;&#x7684;&#x8bbf;&#x95ee;/AccountsDemo/AccountsViewController.m"
-            timestampString = "584454775.880971"
+            filePath = "StudyDemo/Frameworks/Foundation-NS&#x7cfb;&#x5217;&#x57fa;&#x7840;&#x7c7b;/FoundationDemo/NSArrayDemo/NSArrayViewController.m"
+            timestampString = "584539762.29826"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "-setupAccounts"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

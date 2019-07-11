@@ -13,6 +13,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// <__covariant ObjectType> 指泛型：为了兼容swift。
+/**二.泛型用法:
+ __covariant:协变, 子类转父类
+ __contravariant:逆变 父类转子类
+*/
+
+/**
+ * NSArray遵守NSFastEnumeration协议从而实现for in 遍历数据方法
+ * foreach、forin以及-(void)enumerateObjectsUsingBlock:(void (^)(id obj, NSUInteger idx, BOOL *stop))block; 这些语法糖背后的逻辑都是遵循了NSFastEnumeration协议实现的
+ */
 @interface NSArray<__covariant ObjectType> : NSObject <NSCopying, NSMutableCopying, NSSecureCoding, NSFastEnumeration>
 
 @property (readonly) NSUInteger count;
