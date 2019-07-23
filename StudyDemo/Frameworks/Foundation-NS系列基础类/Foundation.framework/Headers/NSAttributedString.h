@@ -14,6 +14,8 @@ NS_CLASS_AVAILABLE(10_0, 3_2)
 @interface NSAttributedString : NSObject <NSCopying, NSMutableCopying, NSSecureCoding>
 
 @property (readonly, copy) NSString *string;
+
+// 取到设置的属性字典
 - (NSDictionary<NSAttributedStringKey, id> *)attributesAtIndex:(NSUInteger)location effectiveRange:(nullable NSRangePointer)range;
 
 @end

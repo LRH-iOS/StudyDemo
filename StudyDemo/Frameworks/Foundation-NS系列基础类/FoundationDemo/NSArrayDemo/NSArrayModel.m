@@ -10,4 +10,10 @@
 
 @implementation NSArrayModel
 
+
+- (void)jjjjjjjjj
+{
+    NSLog(@"执行了model的方法");
+}
+
 @end

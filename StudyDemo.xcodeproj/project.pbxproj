@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354AE7A422E6E2700075A5F1 /* NSAutoreleasePoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */; };
+		354AE7A722E6EA190075A5F1 /* NSBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A622E6EA190075A5F1 /* NSBundleViewController.m */; };
+		354AE7AA22E6ECAC0075A5F1 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A922E6ECAC0075A5F1 /* FoundationViewController.m */; };
 		35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */; };
 		35B7184922D6DF7F0083398D /* CoreMotion_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B7170522D6DF7E0083398D /* CoreMotion_README.md */; };
 		35B7184A22D6DF7F0083398D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7170622D6DF7E0083398D /* CoreMotion.framework */; };
@@ -255,6 +258,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		354AE7A222E6E2700075A5F1 /* NSAutoreleasePoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAutoreleasePoolViewController.h; sourceTree = "<group>"; };
+		354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAutoreleasePoolViewController.m; sourceTree = "<group>"; };
+		354AE7A522E6EA190075A5F1 /* NSBundleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSBundleViewController.h; sourceTree = "<group>"; };
+		354AE7A622E6EA190075A5F1 /* NSBundleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSBundleViewController.m; sourceTree = "<group>"; };
+		354AE7A822E6ECAC0075A5F1 /* FoundationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationViewController.h; sourceTree = "<group>"; };
+		354AE7A922E6ECAC0075A5F1 /* FoundationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
 		35A358DE22D60F7F00900356 /* UIViewController+BaseSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseSetup.h"; sourceTree = "<group>"; };
 		35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseSetup.m"; sourceTree = "<group>"; };
 		35B7170522D6DF7E0083398D /* CoreMotion_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoreMotion_README.md; sourceTree = "<group>"; };
@@ -1303,6 +1312,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		354AE7AB22E6ECDC0075A5F1 /* NSBundleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				354AE7A522E6EA190075A5F1 /* NSBundleViewController.h */,
+				354AE7A622E6EA190075A5F1 /* NSBundleViewController.m */,
+			);
+			path = NSBundleDemo;
+			sourceTree = "<group>";
+		};
+		354AE7AC22E6ECEB0075A5F1 /* NSAutoreleasePoolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				354AE7A222E6E2700075A5F1 /* NSAutoreleasePoolViewController.h */,
+				354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */,
+			);
+			path = NSAutoreleasePoolDemo;
+			sourceTree = "<group>";
+		};
 		35B7170322D6DF7E0083398D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2395,6 +2422,10 @@
 			isa = PBXGroup;
 			children = (
 				35B7174D22D6DF7F0083398D /* Foundation_README.md */,
+				354AE7A822E6ECAC0075A5F1 /* FoundationViewController.h */,
+				354AE7A922E6ECAC0075A5F1 /* FoundationViewController.m */,
+				354AE7AC22E6ECEB0075A5F1 /* NSAutoreleasePoolDemo */,
+				354AE7AB22E6ECDC0075A5F1 /* NSBundleDemo */,
 				35B7192D22D759330083398D /* NSArrayDemo */,
 			);
 			path = FoundationDemo;
@@ -3710,6 +3741,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354AE7A422E6E2700075A5F1 /* NSAutoreleasePoolViewController.m in Sources */,
+				354AE7A722E6EA190075A5F1 /* NSBundleViewController.m in Sources */,
 				35E34144228A5A68006381A9 /* ViewController.m in Sources */,
 				35E3414F228A5A6A006381A9 /* main.m in Sources */,
 				35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */,
@@ -3717,6 +3750,7 @@
 				35E34141228A5A68006381A9 /* AppDelegate.m in Sources */,
 				35B7189A22D6DF800083398D /* AccountsViewController.m in Sources */,
 				35B7193322D75C7D0083398D /* NSArrayModel.m in Sources */,
+				354AE7AA22E6ECAC0075A5F1 /* FoundationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

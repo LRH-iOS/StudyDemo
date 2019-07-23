@@ -10,8 +10,6 @@
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) NSArray *dataArray;
-
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
@@ -22,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataArray = @[@"AccountsViewController", @"NSArrayViewController"];
+    self.dataArray = @[@"AccountsViewController", @"FoundationViewController"];
     [self.tableView reloadData];
     
 }

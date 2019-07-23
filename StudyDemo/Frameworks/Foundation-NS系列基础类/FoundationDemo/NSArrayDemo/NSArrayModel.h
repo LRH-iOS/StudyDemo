@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArrayModel : NSObject
 
-
+- (void)jjjjjjjjj;
 
 @end
 
