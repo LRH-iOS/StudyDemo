@@ -11,14 +11,18 @@
 NS_ASSUME_NONNULL_BEGIN
 
 CX_CLASS_AVAILABLE(ios(10.0))
+
+/// CXAction类：电话操作载体类
 @interface CXAction : NSObject <NSCopying, NSSecureCoding>
 
 /// Unique ID
 @property (nonatomic, readonly, copy) NSUUID *UUID;
 
 /// Whether all actions are either fulfilled or failed
+/// 是否完成 (不论失败成功 )
 @property (nonatomic, readonly, assign, getter=isComplete) BOOL complete;
 
+/// action未完成的超时时间
 @property (nonatomic, readonly, strong) NSDate *timeoutDate;
 
 - (instancetype)init NS_DESIGNATED_INITIALIZER;

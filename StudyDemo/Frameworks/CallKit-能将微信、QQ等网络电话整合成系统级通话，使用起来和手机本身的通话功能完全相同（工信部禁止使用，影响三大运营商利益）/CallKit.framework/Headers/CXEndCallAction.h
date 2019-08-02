@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 CX_CLASS_AVAILABLE(ios(10.0))
+
+/// CXEndCallAction类 ：挂断或拒接
 @interface CXEndCallAction : CXCallAction
 
 /// Normally, providers can just call -[CXAction fulfill] to indicate action fulfillment. Use this method to note a specific date that the call ended.

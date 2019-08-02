@@ -17,6 +17,8 @@ typedef NS_ENUM(NSInteger, CXHandleType) {
 } API_AVAILABLE(ios(10.0));
 
 CX_CLASS_AVAILABLE(ios(10.0))
+
+/// 回调类
 @interface CXHandle : NSObject <NSCopying, NSSecureCoding>
 
 @property (nonatomic, readonly) CXHandleType type;

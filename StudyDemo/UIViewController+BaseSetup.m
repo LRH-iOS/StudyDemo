@@ -12,14 +12,20 @@
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+
 - (void)viewDidLoad {
-    
+
     // Do any additional setup after loading the view.
     
     self.title = NSStringFromClass(self.class);
     
-    self.view.backgroundColor = UIColor.groupTableViewBackgroundColor;
+    // 过滤操作
+    Class class = NSClassFromString(@"UIInputWindowController");
+    if (self.class != class) {
+        self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+    }
 }
+
 #pragma clang diagnostic pop
 
 @end

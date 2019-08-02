@@ -10,6 +10,8 @@
 		354AE7A422E6E2700075A5F1 /* NSAutoreleasePoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */; };
 		354AE7A722E6EA190075A5F1 /* NSBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A622E6EA190075A5F1 /* NSBundleViewController.m */; };
 		354AE7AA22E6ECAC0075A5F1 /* FoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7A922E6ECAC0075A5F1 /* FoundationViewController.m */; };
+		354AE7AE22E7EE840075A5F1 /* CallKit通话流程.png in Resources */ = {isa = PBXBuildFile; fileRef = 354AE7AD22E7EE840075A5F1 /* CallKit通话流程.png */; };
+		354AE7B222E7F2510075A5F1 /* CallKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354AE7B122E7F2510075A5F1 /* CallKitViewController.m */; };
 		35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */; };
 		35B7184922D6DF7F0083398D /* CoreMotion_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B7170522D6DF7E0083398D /* CoreMotion_README.md */; };
 		35B7184A22D6DF7F0083398D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B7170622D6DF7E0083398D /* CoreMotion.framework */; };
@@ -127,7 +129,6 @@
 		35B718BB22D6DF800083398D /* IOSurface_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B717B222D6DF7F0083398D /* IOSurface_README.md */; };
 		35B718BC22D6DF800083398D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B717B422D6DF7F0083398D /* SafariServices.framework */; };
 		35B718BD22D6DF800083398D /* SafariServices_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B717B522D6DF7F0083398D /* SafariServices_README.md */; };
-		35B718BE22D6DF800083398D /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B717B722D6DF7F0083398D /* CoreNFC.framework */; };
 		35B718BF22D6DF800083398D /* CoreNFC_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B717B822D6DF7F0083398D /* CoreNFC_README.md */; };
 		35B718C022D6DF800083398D /* AuthenticationServices_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 35B717BA22D6DF7F0083398D /* AuthenticationServices_README.md */; };
 		35B718C122D6DF800083398D /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B717BB22D6DF7F0083398D /* AuthenticationServices.framework */; };
@@ -258,12 +259,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		350C9DBA22F3D18900FB8ACF /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		354AE7A222E6E2700075A5F1 /* NSAutoreleasePoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAutoreleasePoolViewController.h; sourceTree = "<group>"; };
 		354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAutoreleasePoolViewController.m; sourceTree = "<group>"; };
 		354AE7A522E6EA190075A5F1 /* NSBundleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSBundleViewController.h; sourceTree = "<group>"; };
 		354AE7A622E6EA190075A5F1 /* NSBundleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSBundleViewController.m; sourceTree = "<group>"; };
 		354AE7A822E6ECAC0075A5F1 /* FoundationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationViewController.h; sourceTree = "<group>"; };
 		354AE7A922E6ECAC0075A5F1 /* FoundationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationViewController.m; sourceTree = "<group>"; };
+		354AE7AD22E7EE840075A5F1 /* CallKit通话流程.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CallKit通话流程.png"; sourceTree = "<group>"; };
+		354AE7B022E7F2510075A5F1 /* CallKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallKitViewController.h; sourceTree = "<group>"; };
+		354AE7B122E7F2510075A5F1 /* CallKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallKitViewController.m; sourceTree = "<group>"; };
+		354AE7BA22E7F3650075A5F1 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		354AE7BB22E7F3650075A5F1 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		354AE7BD22E7F3650075A5F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		354AE7C522E7F3BE0075A5F1 /* StudyCallExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyCallExtension.entitlements; sourceTree = "<group>"; };
+		354AE7C622E7F4310075A5F1 /* StudyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyDemo.entitlements; sourceTree = "<group>"; };
 		35A358DE22D60F7F00900356 /* UIViewController+BaseSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseSetup.h"; sourceTree = "<group>"; };
 		35A358DF22D60F7F00900356 /* UIViewController+BaseSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseSetup.m"; sourceTree = "<group>"; };
 		35B7170522D6DF7E0083398D /* CoreMotion_README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoreMotion_README.md; sourceTree = "<group>"; };
@@ -1210,7 +1220,6 @@
 				35B7187322D6DF800083398D /* ARKit.framework in Frameworks */,
 				35B718DE22D6DF800083398D /* NaturalLanguage.framework in Frameworks */,
 				35B7186122D6DF7F0083398D /* MediaToolbox.framework in Frameworks */,
-				35B718BE22D6DF800083398D /* CoreNFC.framework in Frameworks */,
 				35B7190E22D6DF800083398D /* Intents.framework in Frameworks */,
 				35B718AE22D6DF800083398D /* IdentityLookupUI.framework in Frameworks */,
 				35B7187822D6DF800083398D /* UserNotifications.framework in Frameworks */,
@@ -1312,6 +1321,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350C9DB922F3D18900FB8ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				350C9DBA22F3D18900FB8ACF /* CoreNFC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		354AE7AB22E6ECDC0075A5F1 /* NSBundleDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1328,6 +1345,34 @@
 				354AE7A322E6E2700075A5F1 /* NSAutoreleasePoolViewController.m */,
 			);
 			path = NSAutoreleasePoolDemo;
+			sourceTree = "<group>";
+		};
+		354AE7AF22E7F2290075A5F1 /* CallKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				354AE7B022E7F2510075A5F1 /* CallKitViewController.h */,
+				354AE7B122E7F2510075A5F1 /* CallKitViewController.m */,
+				354AE7B322E7F2F30075A5F1 /* CallExtension */,
+			);
+			path = CallKitDemo;
+			sourceTree = "<group>";
+		};
+		354AE7B322E7F2F30075A5F1 /* CallExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CallExtension;
+			sourceTree = "<group>";
+		};
+		354AE7B922E7F3650075A5F1 /* StudyCallExtension */ = {
+			isa = PBXGroup;
+			children = (
+				354AE7C522E7F3BE0075A5F1 /* StudyCallExtension.entitlements */,
+				354AE7BA22E7F3650075A5F1 /* CallDirectoryHandler.h */,
+				354AE7BB22E7F3650075A5F1 /* CallDirectoryHandler.m */,
+				354AE7BD22E7F3650075A5F1 /* Info.plist */,
+			);
+			path = StudyCallExtension;
 			sourceTree = "<group>";
 		};
 		35B7170322D6DF7E0083398D /* Frameworks */ = {
@@ -1900,6 +1945,8 @@
 			isa = PBXGroup;
 			children = (
 				35B7179C22D6DF7F0083398D /* CallKit_README.md */,
+				354AE7AD22E7EE840075A5F1 /* CallKit通话流程.png */,
+				354AE7AF22E7F2290075A5F1 /* CallKitDemo */,
 				35B7179D22D6DF7F0083398D /* CallKit.framework */,
 			);
 			path = "CallKit-能将微信、QQ等网络电话整合成系统级通话，使用起来和手机本身的通话功能完全相同（工信部禁止使用，影响三大运营商利益）";
@@ -2448,7 +2495,9 @@
 				35E3413E228A5A68006381A9 /* StudyDemo */,
 				35E34157228A5A6A006381A9 /* StudyDemoTests */,
 				35E34162228A5A6A006381A9 /* StudyDemoUITests */,
+				354AE7B922E7F3650075A5F1 /* StudyCallExtension */,
 				35E3413D228A5A68006381A9 /* Products */,
+				350C9DB922F3D18900FB8ACF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2465,6 +2514,7 @@
 		35E3413E228A5A68006381A9 /* StudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				354AE7C622E7F4310075A5F1 /* StudyDemo.entitlements */,
 				35E3413F228A5A68006381A9 /* AppDelegate.h */,
 				35E34140228A5A68006381A9 /* AppDelegate.m */,
 				35E34142228A5A68006381A9 /* ViewController.h */,
@@ -3569,6 +3619,11 @@
 				TargetAttributes = {
 					35E3413B228A5A68006381A9 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					35E34153228A5A6A006381A9 = {
 						CreatedOnToolsVersion = 10.1;
@@ -3624,6 +3679,7 @@
 				35B7186E22D6DF800083398D /* CoreVideo_README.md in Resources */,
 				35B718A922D6DF800083398D /* CoreGraphics_README.md in Resources */,
 				35B718A322D6DF800083398D /* GameKit_README.md in Resources */,
+				354AE7AE22E7EE840075A5F1 /* CallKit通话流程.png in Resources */,
 				35B7190922D6DF800083398D /* AVFoundation_README.md in Resources */,
 				35B7191522D6DF800083398D /* CoreText_README.md in Resources */,
 				35B718F422D6DF800083398D /* IdentityLookup_README.md in Resources */,
@@ -3744,6 +3800,7 @@
 				354AE7A422E6E2700075A5F1 /* NSAutoreleasePoolViewController.m in Sources */,
 				354AE7A722E6EA190075A5F1 /* NSBundleViewController.m in Sources */,
 				35E34144228A5A68006381A9 /* ViewController.m in Sources */,
+				354AE7B222E7F2510075A5F1 /* CallKitViewController.m in Sources */,
 				35E3414F228A5A6A006381A9 /* main.m in Sources */,
 				35A358E022D60F7F00900356 /* UIViewController+BaseSetup.m in Sources */,
 				35B7193022D7594C0083398D /* NSArrayViewController.m in Sources */,
@@ -3923,7 +3980,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJ978Y5YRQ;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreNFC-NFC技术（短距高频的无线电技术）",
+				);
 				INFOPLIST_FILE = StudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3941,7 +4001,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PJ978Y5YRQ;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/StudyDemo/Frameworks/CoreNFC-NFC技术（短距高频的无线电技术）",
+				);
 				INFOPLIST_FILE = StudyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

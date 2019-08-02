@@ -18,12 +18,18 @@ CX_CLASS_AVAILABLE(ios(10.0))
 @interface CXCallController : NSObject
 
 /// Initialize call controller with a private, serial queue.
+/// 在私有串行队列创建
 - (instancetype)init;
 
 /// Initialize call controller with specified queue, which is used for calling completion blocks.
+/// 指定队列里创建.默认主线程 //指定使用
 - (instancetype)initWithQueue:(dispatch_queue_t)queue NS_DESIGNATED_INITIALIZER;
 
+/// 电话信息观察者
 @property (nonatomic, readonly, strong) CXCallObserver *callObserver;
+
+
+//以下三个方法：将CXTransaction传递给系统，如果error为空，将调起CXProvider类的-provider:executeTransaction: 代理方法
 
 /// Request a transaction to be performed by the in-app provider.
 ///

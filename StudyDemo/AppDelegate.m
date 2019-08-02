@@ -21,7 +21,10 @@
     
     ViewController *viewCtrl = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
+    nav.view.backgroundColor = UIColor.groupTableViewBackgroundColor;
     self.window.rootViewController = nav;
+    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

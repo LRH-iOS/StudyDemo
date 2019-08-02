@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 CX_CLASS_AVAILABLE(ios(10.0))
+/// 扩展extension
 @interface CXCallDirectoryExtensionContext : NSExtensionContext
 
 @property (nonatomic, weak, nullable) id<CXCallDirectoryExtensionContextDelegate> delegate;
@@ -35,6 +36,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
  */
 @property (nonatomic, readonly, getter=isIncremental) BOOL incremental API_AVAILABLE(ios(11.0));
 
+/// 给系统数据库增加骚扰电话号码
 - (void)addBlockingEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber;
 
 /**
@@ -45,6 +47,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
  @param phoneNumber The blocking entry phone number to remove.
  */
+/// 移除系统数据库某个骚扰电话号码
 - (void)removeBlockingEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0));
 
 /**
@@ -53,8 +56,10 @@ CX_CLASS_AVAILABLE(ios(10.0))
  May only be used when `-isIncremental` returns YES, indicating that the request should provide incremental entries and thus may use this
  API to remove all previously-added blocking entries.
  */
+/// 删除所有骚扰电话
 - (void)removeAllBlockingEntries API_AVAILABLE(ios(11.0));
 
+/// 给系统数据库增加骚扰电话号码以及提示的文本
 - (void)addIdentificationEntryWithNextSequentialPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber label:(NSString *)label;
 
 /**
@@ -66,6 +71,7 @@ CX_CLASS_AVAILABLE(ios(10.0))
 
  @param phoneNumber The identification entry phone number to remove.
  */
+/// 删除指定电话的标记
 - (void)removeIdentificationEntryWithPhoneNumber:(CXCallDirectoryPhoneNumber)phoneNumber API_AVAILABLE(ios(11.0));
 
 /**
@@ -74,8 +80,10 @@ CX_CLASS_AVAILABLE(ios(10.0))
  May only be used when `-isIncremental` returns YES, indicating that the request should provide incremental entries and thus may use this
  API to remove all previously-added identification entries.
  */
+/// 删除所有电话标记
 - (void)removeAllIdentificationEntries API_AVAILABLE(ios(11.0));
 
+/// 提交
 - (void)completeRequestWithCompletionHandler:(nullable void (^)(BOOL expired))completion;
 
 // Use -completeRequestWithCompletionHandler: instead

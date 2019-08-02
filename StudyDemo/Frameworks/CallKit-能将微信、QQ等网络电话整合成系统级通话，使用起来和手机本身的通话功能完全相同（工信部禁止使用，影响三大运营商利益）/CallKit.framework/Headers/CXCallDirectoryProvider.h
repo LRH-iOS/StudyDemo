@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class CXCallDirectoryExtensionContext;
 
 CX_CLASS_AVAILABLE(ios(10.0))
+
 @interface CXCallDirectoryProvider : NSObject <NSExtensionRequestHandling>
 
 - (void)beginRequestWithExtensionContext:(CXCallDirectoryExtensionContext *)context;

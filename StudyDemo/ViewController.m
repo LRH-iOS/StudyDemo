@@ -20,9 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataArray = @[@"AccountsViewController", @"FoundationViewController"];
+    self.dataArray = @[@"AccountsViewController", @"FoundationViewController", @"CallKitViewController"];
     [self.tableView reloadData];
-    
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
@@ -34,7 +33,6 @@
 
     static NSString *CellTableIndentifier = @"CellTableIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellTableIndentifier];
-    //初始化单元格
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellTableIndentifier];
     }    

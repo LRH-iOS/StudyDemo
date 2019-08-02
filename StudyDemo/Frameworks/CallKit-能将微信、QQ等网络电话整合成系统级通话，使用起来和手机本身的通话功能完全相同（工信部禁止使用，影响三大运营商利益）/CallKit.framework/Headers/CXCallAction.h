@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 CX_CLASS_AVAILABLE(ios(10.0))
+
 @interface CXCallAction : CXAction
 
 @property (nonatomic, readonly, copy) NSUUID *callUUID;
