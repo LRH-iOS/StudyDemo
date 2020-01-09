@@ -13,5 +13,21 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudyDemo/Frameworks/CallKit-&#x80fd;&#x5c06;&#x5fae;&#x4fe1;&#x3001;QQ&#x7b49;&#x7f51;&#x7edc;&#x7535;&#x8bdd;&#x6574;&#x5408;&#x6210;&#x7cfb;&#x7edf;&#x7ea7;&#x901a;&#x8bdd;&#xff0c;&#x4f7f;&#x7528;&#x8d77;&#x6765;&#x548c;&#x624b;&#x673a;&#x672c;&#x8eab;&#x7684;&#x901a;&#x8bdd;&#x529f;&#x80fd;&#x5b8c;&#x5168;&#x76f8;&#x540c;&#xff08;&#x5de5;&#x4fe1;&#x90e8;&#x7981;&#x6b62;&#x4f7f;&#x7528;&#xff0c;&#x5f71;&#x54cd;&#x4e09;&#x5927;&#x8fd0;&#x8425;&#x5546;&#x5229;&#x76ca;&#xff09;/CallKitDemo/CallKitViewController.m"
+            timestampString = "586685431.950484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

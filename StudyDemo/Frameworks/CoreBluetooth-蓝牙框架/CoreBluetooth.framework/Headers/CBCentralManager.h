@@ -144,6 +144,8 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *	@seealso			CBCentralManagerScanOptionSolicitedServiceUUIDsKey
  *
  */
+
+//主动发起扫描外设 开始扫描符合服务serviceUUIDs的外设
 - (void)scanForPeripheralsWithServices:(nullable NSArray<CBUUID *> *)serviceUUIDs options:(nullable NSDictionary<NSString *, id> *)options;
 
 /*!
@@ -152,6 +154,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @discussion Stops scanning for peripherals.
  *
  */
+//主动停止扫描
 - (void)stopScan;
 
 /*!
@@ -171,6 +174,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @seealso            CBConnectPeripheralOptionNotifyOnNotificationKey
  *
  */
+//主动连接指定外设
 - (void)connectPeripheral:(CBPeripheral *)peripheral options:(nullable NSDictionary<NSString *, id> *)options;
 
 /*!
@@ -184,6 +188,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @see                centralManager:didDisconnectPeripheral:error:
  *
  */
+//主动断开指定外设
 - (void)cancelPeripheralConnection:(CBPeripheral *)peripheral;
 
 
@@ -216,6 +221,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @see            state
  *
  */
+//更新蓝牙状态
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central;
 
 @optional
@@ -253,6 +259,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @seealso                    CBAdvertisementData.h
  *
  */
+//扫到设备会进入到此代理方法 对应Scan方法 advertisementData：广播包 RSSI：信号强度
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI;
 
 /*!
@@ -264,6 +271,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *  @discussion         This method is invoked when a connection initiated by {@link connectPeripheral:options:} has succeeded.
  *
  */
+//代理返回已经链接成功的peripheral 外设
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral;
 
 /*!
@@ -277,6 +285,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *                      timeout, the failure of a connection is atypical and usually indicative of a transient issue.
  *
  */
+//连接失败
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error;
 
 /*!
@@ -291,6 +300,7 @@ CB_EXTERN_CLASS @interface CBCentralManager : CBManager
  *                      called, no more methods will be invoked on <i>peripheral</i>'s <code>CBPeripheralDelegate</code>.
  *
  */
+//外设链接断开时会回调
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error;
 
 @end

@@ -25,11 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
  *  @discussion Represents the current connection state of a CBPeripheral.
  *
  */
+//外设设备连接状态state
 typedef NS_ENUM(NSInteger, CBPeripheralState) {
-	CBPeripheralStateDisconnected = 0,
-	CBPeripheralStateConnecting,
-	CBPeripheralStateConnected,
-	CBPeripheralStateDisconnecting NS_AVAILABLE(10_13, 9_0),
+	CBPeripheralStateDisconnected = 0,          //断开
+	CBPeripheralStateConnecting,                //正在连接
+	CBPeripheralStateConnected,                 //已连接
+	CBPeripheralStateDisconnecting NS_AVAILABLE(10_13, 9_0),    //正在断开连接
 } NS_AVAILABLE(10_9, 7_0);
 
 /*!
@@ -38,9 +39,10 @@ typedef NS_ENUM(NSInteger, CBPeripheralState) {
  *  @discussion Specifies which type of write is to be performed on a CBCharacteristic.
  *
  */
+//设备写入服务类型 一般情况下都是CBCharacteristicWriteWithResponse
 typedef NS_ENUM(NSInteger, CBCharacteristicWriteType) {
-	CBCharacteristicWriteWithResponse = 0,
-	CBCharacteristicWriteWithoutResponse,
+	CBCharacteristicWriteWithResponse = 0,      //有响应
+	CBCharacteristicWriteWithoutResponse,       //无响应
 };
 
 @protocol CBPeripheralDelegate;
@@ -59,6 +61,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion The delegate object that will receive peripheral events.
  */
+//用来接收设备事件的代理
 @property(weak, nonatomic, nullable) id<CBPeripheralDelegate> delegate;
 
 /*!
@@ -66,6 +69,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion The name of the peripheral.
  */
+//设备名称
 @property(retain, readonly, nullable) NSString *name;
 
 /*!
@@ -82,6 +86,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion The current connection state of the peripheral.
  */
+//外设连接状态CBPeripheralState类型
 @property(readonly) CBPeripheralState state;
 
 /*!
@@ -89,6 +94,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion A list of <code>CBService</code> objects that have been discovered on the peripheral.
  */
+//数组，内含扫描到的设备的服务
 @property(retain, readonly, nullable) NSArray<CBService *> *services;
 
 /*!
@@ -98,12 +104,16 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *				the value will be set to YES after the current writes have been flushed, and
  *				<link>peripheralIsReadyToSendWriteWithoutResponse:</link> will be called.
  */
+/*
+ *  1、如果值为YES，远程设备有空间发送一个没有响应的写服务.
+ *  2、如果值为 NO,如果值被设置为YES时，当前写服务被冲刷，方法peripheralIsReadyToSendWriteWithoutResponse:将会被调用
+ */
 @property(readonly) BOOL canSendWriteWithoutResponse;
 
 /*!
  *  @method readRSSI
  *
- *  @discussion While connected, retrieves the current RSSI of the link.
+ *  @discussion While connected, retrieves the current RSSI of the link.  当连接成功，检索当前连接的信号强度。回调方法为 peripheral:didReadRSSI:error:
  *
  *  @see        peripheral:didReadRSSI:error:
  */
@@ -112,12 +122,12 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
 /*!
  *  @method discoverServices:
  *
- *  @param serviceUUIDs A list of <code>CBUUID</code> objects representing the service types to be discovered. If <i>nil</i>,
+ *  @param serviceUUIDs A list of <code>CBUUID</code> objects representing the service types to be discovered. If <i>nil</i>,   需要扫描的设备的服务的id，如果为nil，则扫描所有的服务
  *						all services will be discovered.
  *
- *  @discussion			Discovers available service(s) on the peripheral.
+ *  @discussion			Discovers available service(s) on the peripheral.       扫描发现设备所有可用的服务
  *
- *  @see				peripheral:didDiscoverServices:
+ *  @see				peripheral:didDiscoverServices:                         扫描回调方法peripheral:didDiscoverServices:
  */
 - (void)discoverServices:(nullable NSArray<CBUUID *> *)serviceUUIDs;
 
@@ -126,6 +136,8 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @param includedServiceUUIDs A list of <code>CBUUID</code> objects representing the included service types to be discovered. If <i>nil</i>,
  *								all of <i>service</i>s included services will be discovered, which is considerably slower and not recommended.
+                                需要发现的服务service中的服务id列表，如果为nil，则扫描服务内所有的服务，这样的话会比较慢，不推荐
+ 
  *  @param service				A GATT service.
  *
  *  @discussion					Discovers the specified included service(s) of <i>service</i>.
@@ -139,6 +151,8 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @param characteristicUUIDs	A list of <code>CBUUID</code> objects representing the characteristic types to be discovered. If <i>nil</i>,
  *								all characteristics of <i>service</i> will be discovered.
+                                数组，内含需要被发现的所有特征值类型，如果为nil，则为所有特征值
+ 
  *  @param service				A GATT service.
  *
  *  @discussion					Discovers the specified characteristic(s) of <i>service</i>.
@@ -150,7 +164,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
 /*!
  *  @method readValueForCharacteristic:
  *
- *  @param characteristic	A GATT characteristic.
+ *  @param characteristic	A GATT characteristic.      需要读取的服务特征值
  *
  *  @discussion				Reads the characteristic value for <i>characteristic</i>.
  *
@@ -162,6 +176,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *  @method		maximumWriteValueLengthForType:
  *
  *  @discussion	The maximum amount of data, in bytes, that can be sent to a characteristic in a single write type.
+                获取向一个写服务可发送的最大字节数
  *
  *  @see		writeValue:forCharacteristic:type:
  */
@@ -170,15 +185,17 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
 /*!
  *  @method writeValue:forCharacteristic:type:
  *
- *  @param data				The value to write.
- *  @param characteristic	The characteristic whose characteristic value will be written.
- *  @param type				The type of write to be executed.
+ *  @param data				The value to write.             待写数据
+ *  @param characteristic	The characteristic whose characteristic value will be written.      写服务特征
+ *  @param type				The type of write to be executed.                                   写服务的类型（有/无响应）
  *
- *  @discussion				Writes <i>value</i> to <i>characteristic</i>'s characteristic value.
+ *  @discussion				Writes <i>value</i> to <i>characteristic</i>'s characteristic value.        向指定服务写数据
  *							If the <code>CBCharacteristicWriteWithResponse</code> type is specified, {@link peripheral:didWriteValueForCharacteristic:error:}
  *							is called with the result of the write request.
  *							If the <code>CBCharacteristicWriteWithoutResponse</code> type is specified, and canSendWriteWithoutResponse is false, the delivery
  * 							of the data is best-effort and may not be guaranteed.
+ *  1、如果指定CBCharacteristicWriteWithResponse类型，写入结果将会回调 peripheral:didWriteValueForCharacteristic:error:方法
+ *  2、如果指定为CBCharacteristicWriteWithoutResponse类型，同时canSendWriteWithoutResponse为NO时，则数据将尽最大努力，但不会被保证成功
  *
  *  @see					peripheral:didWriteValueForCharacteristic:error:
  *  @see					peripheralIsReadyToSendWriteWithoutResponse:
@@ -270,6 +287,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *
  *  @discussion			This method is invoked when the @link name @/link of <i>peripheral</i> changes.
  */
+// 当设备的名称改变该方法被触发
 - (void)peripheralDidUpdateName:(CBPeripheral *)peripheral NS_AVAILABLE(10_9, 6_0);
 
 /*!
@@ -282,6 +300,7 @@ CB_EXTERN_CLASS @interface CBPeripheral : CBPeer
  *						At this point, the designated <code>CBService</code> objects have been invalidated.
  *						Services can be re-discovered via @link discoverServices: @/link.
  */
+// 当设备的服务改变时候 触发该方法
 - (void)peripheral:(CBPeripheral *)peripheral didModifyServices:(NSArray<CBService *> *)invalidatedServices NS_AVAILABLE(10_9, 7_0);
 
 /*!

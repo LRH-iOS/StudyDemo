@@ -32,11 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  *
  */
 typedef NS_OPTIONS(NSUInteger, CBCharacteristicProperties) {
-	CBCharacteristicPropertyBroadcast												= 0x01,
-	CBCharacteristicPropertyRead													= 0x02,
-	CBCharacteristicPropertyWriteWithoutResponse									= 0x04,
-	CBCharacteristicPropertyWrite													= 0x08,
-	CBCharacteristicPropertyNotify													= 0x10,
+	CBCharacteristicPropertyBroadcast												= 0x01,     //广播属性
+	CBCharacteristicPropertyRead													= 0x02,     //可读属性
+    CBCharacteristicPropertyWriteWithoutResponse									= 0x04,     //无响应的写
+	CBCharacteristicPropertyWrite													= 0x08,     //写
+	CBCharacteristicPropertyNotify													= 0x10,     //通知
 	CBCharacteristicPropertyIndicate												= 0x20,
 	CBCharacteristicPropertyAuthenticatedSignedWrites								= 0x40,
 	CBCharacteristicPropertyExtendedProperties										= 0x80,
